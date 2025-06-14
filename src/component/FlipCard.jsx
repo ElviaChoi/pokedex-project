@@ -2,8 +2,8 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const FlipImageContainer = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   position: relative;
   transform-style: preserve-3d;
   transition: 0.5s;

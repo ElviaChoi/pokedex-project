@@ -9,9 +9,9 @@ export default function Detail() {
   const pokemon = useSelector(selectPokemonById(Number(pokemonId)));
 
   return (
-    <div className="bg-[gray] min-h-screen flex justify-center items-center">
-      <div className="bg-white flex flex-col justify-center items-center border py-[30px] px-[60px] rounded-[10px] border-b-[5px] border-r-[8px] border-black">
-        <div className="text-[28px] mb-[10px]">
+    <div className="bg-[gray] min-h-screen flex justify-center items-center px-4 py-10">
+      <div className="bg-white drop-shadow-[0_18px_30px_rgba(0,0,0,0.5)] hover:drop-shadow-[0_24px_36px_rgba(0,0,0,0.6)] transition-shadow duration-300 rounded-xl px-10 py-8 max-w-md w-full text-center">
+        <div className="text-[28px] font-bold mb-[10px]">
           {pokemon.name}
           <FavoriteButton pokemonId={Number(pokemonId)} />
         </div>
