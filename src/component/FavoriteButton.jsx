@@ -17,7 +17,7 @@ export default function FavoriteButton({ pokemonId }) {
             : favoriteSlice.actions.addToFavorite(pokemonId)
         );
       }}
-      className={isFavorite ? "text-[red]" : "thick-outline"}
+      className={isFavorite ? "text-[red] align-middle" : "thick-outline align-middle"}
     >
       {isFavorite ? "♥" : "♡"}
     </button>
