@@ -21,23 +21,23 @@ function App() {
 
   return (
     <>
-      <Link to="/">
-        <h1 className="border-t-50 border-t-[red] bg-black text-white text-[40px] text-center">
+      <Link to='/'>
+        <h1 className='border-t-50 border-t-[red] bg-black text-white text-[40px] text-center'>
           포켓몬 도감
         </h1>
       </Link>
-      <nav className="py-[10px] border-b-[3px] border-b-black flex gap-[20px] justify-center">
+      <nav className='py-3 border-b-2 border-b-black flex gap-[20px] justify-center font-semibold text-lg'>
         <Link to={"/"}>메인</Link>
         <Link to={"/favorite"}>찜목록</Link>
         <div>
           <input
             onChange={(e) => navigate(`/search?pokemon=${e.target.value}`)}
-            className="w-[120px] border-b border-[darkgray] px-2"
+            className='w-[120px] border-b border-[darkgray] px-2'
           />
           <span>🔍</span>
         </div>
       </nav>
-      <main className="bg-[gray] flex flex-wrap gap-[20px] justify-center pt-[20px] pb-[20px]">
+      <main className='bg-[gray] flex flex-wrap gap-[20px] justify-center pt-[20px] pb-[20px]'>
         <Suspense fallback={<div>로딩중...</div>}>
           <Routes>
             <Route path={"/"} element={<Main />} />
