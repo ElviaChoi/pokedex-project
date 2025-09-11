@@ -20,7 +20,7 @@ const CardContainer = styled.section`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 15px 3px rgba(192, 192, 192, 0.5), 0 0 25px 8px rgba(255, 255, 255, 0.7);
   }
 
   img {
