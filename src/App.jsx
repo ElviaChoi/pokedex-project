@@ -26,7 +26,7 @@ function App() {
           포켓몬 도감
         </h1>
       </Link>
-      <nav className='py-3 border-b-2 border-b-black flex gap-[20px] justify-center font-semibold text-lg'>
+      <nav className='bg-white py-3 border-b-2 border-b-black flex gap-[20px] justify-center font-semibold text-lg'>
         <Link to={"/"}>메인</Link>
         <Link to={"/favorite"}>찜목록</Link>
         <div>
@@ -37,7 +37,7 @@ function App() {
           <span>🔍</span>
         </div>
       </nav>
-      <main className='bg-neutral-500 flex flex-wrap gap-6 justify-center pt-7 pb-7'>
+      <main className='flex flex-wrap gap-7 justify-center py-8 lg:max-w-[968px] mx-auto'>
         <Suspense fallback={<div>로딩중...</div>}>
           <Routes>
             <Route path={"/"} element={<Main />} />
