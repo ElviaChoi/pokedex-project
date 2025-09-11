@@ -15,10 +15,8 @@ const CardContainer = styled.section`
   border-radius: 10px;
   background: white;
 
-  /* 부드러운 그림자 적용 */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 
-  /* 호버 시 그림자 더 진하게 */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-4px);

@@ -7,7 +7,7 @@ export const pokemonSlice = createSlice({
     data: [],
     loading: true,
   },
-  reducers: {}, //동기적 상태 변경
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchMultiplePokemonById.pending, (state) => {
