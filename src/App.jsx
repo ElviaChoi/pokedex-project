@@ -21,9 +21,11 @@ function App() {
 
   return (
     <>
-      <h1 className="border-t-50 border-t-[red] bg-black text-white text-[40px] text-center">
-        포켓몬 도감
-      </h1>
+      <Link to="/">
+        <h1 className="border-t-50 border-t-[red] bg-black text-white text-[40px] text-center">
+          포켓몬 도감
+        </h1>
+      </Link>
       <nav className="py-[10px] border-b-[3px] border-b-black flex gap-[20px] justify-center">
         <Link to={"/"}>메인</Link>
         <Link to={"/favorite"}>찜목록</Link>
