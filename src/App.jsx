@@ -37,7 +37,7 @@ function App() {
           <span>🔍</span>
         </div>
       </nav>
-      <main className='flex flex-wrap gap-7 justify-center py-8 lg:max-w-[1028px] mx-auto px-4 sm:px-6 lg:px-8'>
+      <main className='flex flex-wrap gap-7 justify-center py-8 lg:max-w-[1228px] mx-auto px-4 sm:px-6 lg:px-8'>
         <Suspense fallback={<div>로딩중...</div>}>
           <Routes>
             <Route path={"/"} element={<Main />} />

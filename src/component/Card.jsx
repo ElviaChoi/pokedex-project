@@ -4,8 +4,8 @@ import styled from "styled-components";
 import FavoriteButton from "./FavoriteButton";
 
 const CardContainer = styled.section`
-  width: 220px;
-  height: 280px;
+  width: 270px;
+  height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@ const CardContainer = styled.section`
   }
 
   img {
-    width: 150px;
+    width: 180px;
   }
 `;
 
