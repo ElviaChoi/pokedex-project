@@ -25,7 +25,7 @@ export const pokemonSlice = createSlice({
 
 export const favoriteSlice = createSlice({
   name: "favorite",
-  initialState: [1, 2, 3, 4, 5],
+  initialState: [1, 2],
   reducers: {
     addToFavorite(state, action) {
       state.push(action.payload);
